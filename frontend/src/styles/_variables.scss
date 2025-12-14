@@ -1,0 +1,28 @@
+// (Notice the underscore _ → SCSS treats it as a partial file)
+
+// A partial is a stylesheet that is meant to be imported/used inside other SCSS files, not compiled into its own CSS file.
+// _variables.scss → won’t generate its own variables.css, it’s just a module to be shared.
+// variables.scss (without _) → will generate a CSS file on its own if the build system sees it.
+
+// That’s why convention says:
+// Use _filename.scss for partials (variables, mixins, functions).
+// Use global.scss or main.scss for actual stylesheets that get compiled and included.
+
+// SCSS variables
+$primary-color: #3887cf;
+$secondary-color: #2279c9;
+$head-light-color:#e8f4ff;
+$background-dark: #242424;
+$background-light: #ffffff;
+$text-dark: #213547;
+$text-light: rgba(255, 255, 255, 0.87);
+
+// CSS variables (optional if you want runtime theming)
+// :root {
+//   --primary-color: #{$primary-color};
+//   --secondary-color: #{$secondary-color};
+//   --background-dark: #{$background-dark};
+//   --background-light: #{$background-light};
+//   --text-dark: #{$text-dark};
+//   --text-light: #{$text-light};
+// }

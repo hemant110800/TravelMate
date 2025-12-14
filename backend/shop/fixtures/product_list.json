@@ -1,0 +1,223 @@
+[
+    {
+      "model": "shop.product",
+      "pk": "It_1",
+      "fields": {
+        "title": "Running Shoes",
+        "price": 120.00,
+        "description": "Comfortable running shoes for daily workouts.",
+        "image_src": "running_shoes.jpg",
+        "image_alt": "Pair of red running shoes"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_2",
+      "fields": {
+        "title": "Sneakers",
+        "price": 95.00,
+        "description": "Stylish sneakers for casual wear.",
+        "image_src": "sneakers.jpg",
+        "image_alt": "White sneakers on floor"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_3",
+      "fields": {
+        "title": "High Heels",
+        "price": 150.00,
+        "description": "Elegant high heels for parties and events.",
+        "image_src": "high_heels.jpg",
+        "image_alt": "Black high heels"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_4",
+      "fields": {
+        "title": "Boots",
+        "price": 200.00,
+        "description": "Durable boots for all-weather wear.",
+        "image_src": "boots.jpg",
+        "image_alt": "Brown leather boots"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_5",
+      "fields": {
+        "title": "Loafers",
+        "price": 80.00,
+        "description": "Comfortable loafers for office or casual outings.",
+        "image_src": "loafers.jpg",
+        "image_alt": "Tan leather loafers"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_6",
+      "fields": {
+        "title": "White T-Shirt",
+        "price": 25.00,
+        "description": "Classic white cotton t-shirt.",
+        "image_src": "white_tshirt.jpg",
+        "image_alt": "Plain white t-shirt"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_7",
+      "fields": {
+        "title": "Graphic T-Shirt",
+        "price": 30.00,
+        "description": "Trendy graphic printed t-shirt.",
+        "image_src": "graphic_tshirt.jpg",
+        "image_alt": "T-shirt with graphic print"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_8",
+      "fields": {
+        "title": "V-Neck T-Shirt",
+        "price": 28.00,
+        "description": "Comfortable V-neck t-shirt.",
+        "image_src": "vneck_tshirt.jpg",
+        "image_alt": "V-neck t-shirt on hanger"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_9",
+      "fields": {
+        "title": "Striped T-Shirt",
+        "price": 27.00,
+        "description": "Casual striped t-shirt.",
+        "image_src": "striped_tshirt.jpg",
+        "image_alt": "Striped t-shirt folded"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_10",
+      "fields": {
+        "title": "Long Sleeve T-Shirt",
+        "price": 35.00,
+        "description": "Comfortable long-sleeve cotton t-shirt.",
+        "image_src": "long-sleeve-thisrt.jpg",
+        "image_alt": "Long sleeve t-shirt hanging"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_11",
+      "fields": {
+        "title": "Leather Jacket",
+        "price": 250.00,
+        "description": "Stylish leather jacket for casual wear.",
+        "image_src": "leather_jacket.jpg",
+        "image_alt": "Black leather jacket"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_12",
+      "fields": {
+        "title": "Denim Jacket",
+        "price": 150.00,
+        "description": "Classic denim jacket for daily wear.",
+        "image_src": "denim_jacket.jpg",
+        "image_alt": "Blue denim jacket"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_13",
+      "fields": {
+        "title": "Bomber Jacket",
+        "price": 180.00,
+        "description": "Trendy bomber jacket with zipper closure.",
+        "image_src": "bomber_jacket.jpg",
+        "image_alt": "Brown bomber jacket"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_14",
+      "fields": {
+        "title": "Puffer Jacket",
+        "price": 220.00,
+        "description": "Warm puffer jacket for winter.",
+        "image_src": "puffer_jacket.jpg",
+        "image_alt": "Yellow puffer jacket"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_15",
+      "fields": {
+        "title": "Blazer",
+        "price": 200.00,
+        "description": "Formal blazer for office and events.",
+        "image_src": "blezzer.jpg",
+        "image_alt": "Black formal blazer"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_16",
+      "fields": {
+        "title": "Skinny Jeans",
+        "price": 90.00,
+        "description": "Stylish skinny jeans.",
+        "image_src": "skinny_jeans.jpg",
+        "image_alt": "Blue skinny jeans"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_17",
+      "fields": {
+        "title": "Bootcut Jeans",
+        "price": 95.00,
+        "description": "Classic bootcut jeans.",
+        "image_src": "bootcut_jeans.jpg",
+        "image_alt": "Dark Blue bootcut jeans"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_18",
+      "fields": {
+        "title": "Straight Leg Jeans",
+        "price": 85.00,
+        "description": "Comfortable straight leg jeans.",
+        "image_src": "straight_leg_jeans.jpg",
+        "image_alt": "Light blue straight jeans"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_19",
+      "fields": {
+        "title": "Leather Wallet",
+        "price": 60.00,
+        "description": "Compact leather wallet with multiple card slots.",
+        "image_src": "wallet.jpg",
+        "image_alt": "Brown leather wallet"
+      }
+    },
+    {
+      "model": "shop.product",
+      "pk": "It_20",
+      "fields": {
+        "title": "Clutch Bag",
+        "price": 70.00,
+        "description": "Elegant clutch bag for parties.",
+        "image_src": "clutch_bag.jpg",
+        "image_alt": "Brown leather clutch"
+      }
+    }
+]
+  

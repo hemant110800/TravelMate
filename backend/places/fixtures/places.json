@@ -1,0 +1,200 @@
+[
+  {
+    "model": "places.place",
+    "pk": "p1",
+    "fields": {
+      "title": "Forest Waterfall",
+      "image_src": "forest-waterfall.jpg",
+      "image_alt": "A tranquil forest with a cascading waterfall amidst greenery.",
+      "lat": 44.5588,
+      "lon": -80.344
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p2",
+    "fields": {
+      "title": "Sahara Desert Dunes",
+      "image_src": "desert-dunes.jpg",
+      "image_alt": "Golden dunes stretching to the horizon in the Sahara Desert.",
+      "lat": 25.0,
+      "lon": 0.0
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p3",
+    "fields": {
+      "title": "Himalayan Peaks",
+      "image_src": "majestic-mountains.jpg",
+      "image_alt": "The sun setting behind snow-capped peaks of majestic mountains.",
+      "lat": 27.9881,
+      "lon": 86.925
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p4",
+    "fields": {
+      "title": "Caribbean Beach",
+      "image_src": "caribbean-beach.jpg",
+      "image_alt": "Pristine white sand and turquoise waters of a Caribbean beach.",
+      "lat": 18.2208,
+      "lon": -66.5901
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p5",
+    "fields": {
+      "title": "Ancient Grecian Ruins",
+      "image_src": "ruins.jpg",
+      "image_alt": "Historic ruins standing tall against the backdrop of the Grecian sky.",
+      "lat": 37.9715,
+      "lon": 23.7257
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p6",
+    "fields": {
+      "title": "Amazon Rainforest Canopy",
+      "image_src": "rainforest.jpg",
+      "image_alt": "Lush canopy of a rainforest, teeming with life.",
+      "lat": -3.4653,
+      "lon": -62.2159
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p7",
+    "fields": {
+      "title": "Northern Lights",
+      "image_src": "northern-lights.jpg",
+      "image_alt": "Dazzling display of the Northern Lights in a starry sky.",
+      "lat": 64.9631,
+      "lon": -19.0208
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p8",
+    "fields": {
+      "title": "Japanese Temple",
+      "image_src": "japanese-temple.jpg",
+      "image_alt": "Ancient Japanese temple surrounded by autumn foliage.",
+      "lat": 34.9949,
+      "lon": 135.785
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p9",
+    "fields": {
+      "title": "Great Barrier Reef",
+      "image_src": "great-barrier-reef.jpg",
+      "image_alt": "Vibrant coral formations of the Great Barrier Reef underwater.",
+      "lat": -18.2871,
+      "lon": 147.6992
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p10",
+    "fields": {
+      "title": "Parisian Streets",
+      "image_src": "parisian-streets.jpg",
+      "image_alt": "Charming streets of Paris with historic buildings and cafes.",
+      "lat": 48.8566,
+      "lon": 2.3522
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p11",
+    "fields": {
+      "title": "Grand Canyon",
+      "image_src": "grand-canyon.jpg",
+      "image_alt": "Expansive view of the deep gorges and ridges of the Grand Canyon.",
+      "lat": 36.1069,
+      "lon": -112.1129
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p12",
+    "fields": {
+      "title": "Venetian Canals",
+      "image_src": "venetian-canals.jpg",
+      "image_alt": "Glistening waters of the Venetian canals as gondolas glide by at sunset.",
+      "lat": 45.4408,
+      "lon": 12.3155
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p13",
+    "fields": {
+      "title": "Taj Mahal",
+      "image_src": "taj-mahal.jpg",
+      "image_alt": "The iconic Taj Mahal reflecting in its surrounding waters during sunrise.",
+      "lat": 27.1751,
+      "lon": 78.0421
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p14",
+    "fields": {
+      "title": "Kerala Backwaters",
+      "image_src": "kerala-backwaters.jpg",
+      "image_alt": "Tranquil waters and lush greenery of the Kerala backwaters.",
+      "lat": 9.4981,
+      "lon": 76.3388
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p15",
+    "fields": {
+      "title": "African Savanna",
+      "image_src": "african-savanna.jpg",
+      "image_alt": "Wild animals roaming freely in the vast landscapes of the African savanna.",
+      "lat": -2.153,
+      "lon": 34.6857
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p16",
+    "fields": {
+      "title": "Victoria Falls",
+      "image_src": "victoria-falls.jpg",
+      "image_alt": "The powerful cascade of Victoria Falls, a natural wonder between Zambia and Zimbabwe.",
+      "lat": -17.9243,
+      "lon": 25.8572
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p17",
+    "fields": {
+      "title": "Machu Picchu",
+      "image_src": "machu-picchu.jpg",
+      "image_alt": "The historic Incan citadel of Machu Picchu illuminated by the morning sun.",
+      "lat": -13.1631,
+      "lon": -72.545
+    }
+  },
+  {
+    "model": "places.place",
+    "pk": "p18",
+    "fields": {
+      "title": "Amazon River",
+      "image_src": "amazon-river.jpg",
+      "image_alt": "Navigating the waters of the Amazon River, surrounded by dense rainforest.",
+      "lat": -3.4653,
+      "lon": -58.38
+    }
+  }
+]

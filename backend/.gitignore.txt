@@ -1,0 +1,28 @@
+# Python
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+
+.venv/
+travelenv/
+venv/
+env/
+/travelenv/
+backend/travelenv/
+/backend/travelenv/
+backend/travelenv/Lib/
+backend/backend/travelenv/Lib/
+
+
+# Django
+db.sqlite3
+staticfiles/
+media/
+
+# Environment variables
+.env
+

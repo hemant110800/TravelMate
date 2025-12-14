@@ -1,0 +1,102 @@
+Project "TravelMate - Travel & Shop Platform" {
+  database_type: 'PostgreSQL'
+  Note: '''
+Cleaned schema for business logic only
+(Django internal tables removed)
+
+Last Updated: 13 Dec 2025
+'''
+}
+
+/* =========================
+   USERS
+========================= */
+
+Table users.User {
+  Note: '''
+Registered application users.
+Derived from Django auth_user.
+
+Authentication & ownership reference table
+'''
+
+  id int [pk]
+  username varchar [unique, not null]
+  email varchar [not null]
+  is_active boolean [default: true]
+  date_joined datetime
+
+}
+
+/* =========================
+   PLACES MODULE
+========================= */
+
+Table places.Place {
+  Note: '''
+A place that can be viewed or saved by users.
+'''
+
+  id varchar [pk]
+  title varchar [not null]
+  image_src varchar [not null]
+  image_alt text
+  lat float [not null]
+  lon float [not null]
+}
+
+Table places.UserPlace {
+  Note: '''
+Mapping table: users saving places.
+Represents a user's collection.
+'''
+
+  id bigint [pk]
+  user_id int [not null]
+  place_id varchar [not null]
+  created_at datetime
+
+  Indexes {
+    (user_id, place_id) [unique]
+  }
+}
+
+Ref: places.UserPlace.user_id > users.User.id
+Ref: places.UserPlace.place_id > places.Place.id
+
+/* =========================
+   SHOP MODULE
+========================= */
+
+Table shop.Product {
+  Note: '''
+Products available for purchase.
+'''
+
+  id varchar [pk]
+  title varchar [not null]
+  description text
+  price decimal [not null]
+  image_src varchar
+  image_alt text
+}
+
+Table shop.UserCart {
+  Note: '''
+User shopping cart items.
+One row = one product per user.
+'''
+
+  id bigint [pk]
+  user_id int [not null]
+  product_id varchar [not null]
+  quantity int [default: 1]
+  added_at datetime
+
+  Indexes {
+    (user_id, product_id) [unique]
+  }
+}
+
+Ref: shop.UserCart.user_id > users.User.id
+Ref: shop.UserCart.product_id > shop.Product.id
