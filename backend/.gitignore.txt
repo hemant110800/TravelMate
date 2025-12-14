@@ -9,8 +9,7 @@ __pycache__/
 
 .venv/
 travelenv/
-venv/
-env/
+.venv/
 /travelenv/
 backend/travelenv/
 /backend/travelenv/
@@ -25,4 +24,7 @@ media/
 
 # Environment variables
 .env
+.env/
+env
+/env
 
