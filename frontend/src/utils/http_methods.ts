@@ -1,6 +1,10 @@
 import axios, { type AxiosResponse } from "axios";
 import api from "./axios_interceptor";
 
+
+const API_ROOT = import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:8000";
+
+
 type PlaceType = {
   id: string;
   title: string;
@@ -70,6 +74,7 @@ interface razorPayPaymentResponse {
   razorpay_payment_id: string;
   razorpay_signature: string;
 }
+
 
 export async function getToken(
   data: LoginRequest
@@ -184,8 +189,8 @@ export async function retrieve_shopping_products(): Promise<
 export async function verifyPaymentHandler(
   razorPayResponse: razorPayPaymentResponse
 ) {
-  const response = await axios.post(
-    "http://127.0.0.1:8000/shop/verify_payment/",
+  const response = await axios.post(API_ROOT+
+    "/shop/verify_payment/",
     razorPayResponse
   );
   if (response.status !== 200) {
@@ -197,8 +202,8 @@ export async function verifyPaymentHandler(
 
 export async function makePayment(amount: number): Promise<any> {
   return new Promise(async (resolve, reject) => {
-    const orderResponse = await axios.post(
-      "http://127.0.0.1:8000/shop/create-order/",
+    const orderResponse = await axios.post(API_ROOT + 
+      "/shop/create-order/",
       { amount }
     );
 
@@ -252,7 +257,7 @@ export async function makePayment(amount: number): Promise<any> {
 }
 
 export const geminiChat = async (message: string) => {
-  const res = await axios.post("http://127.0.0.1:8000/ai/gemini-chat/", {
+  const res = await axios.post(API_ROOT + "/ai/gemini-chat/", {
     message,
   });
   if(res.status == 400){
