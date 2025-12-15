@@ -46,7 +46,7 @@ if DEBUG:
 else:
     ALLOWED_HOSTS = os.getenv(
         "ALLOWED_HOSTS",
-        "travelmate-backend.onrender.com"
+        "travelmate-backend-00dq.onrender.com"
     ).split()
 
 
@@ -195,7 +195,7 @@ CORS_ALLOWED_ORIGINS = [
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://travelmate-backend.onrender.com",
+    "https://travelmate-backend-00dq.onrender.com",
     "https://your-frontend-name.netlify.app",
 ]
 
