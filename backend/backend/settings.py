@@ -189,14 +189,14 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://your-frontend-name.netlify.app",
+    "https://hemant110800travelmate.netlify.app"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://travelmate-backend-00dq.onrender.com",
-    "https://your-frontend-name.netlify.app",
+    "https://hemant110800travelmate.netlify.app",
 ]
 
 CORS_ALLOW_HEADERS = [
