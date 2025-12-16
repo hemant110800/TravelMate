@@ -1,12 +1,10 @@
-import axios from "axios";
 import { createContext, useEffect, useState, type ReactNode } from "react";
 import {
   getToken,
-  update_access_token,
   registerUser,
 } from "../utils/http_methods";
 import { jwtDecode } from "jwt-decode";
-import { redirect, useNavigate } from "react-router-dom";
+import { redirect } from "react-router-dom";
 
 interface DecodedToken {
   username: string;
@@ -60,8 +58,7 @@ export const AuthProvider = ({ children }: AuthProvideProps) => {
     : null;
 
   const [authToken, setAuthToken] = useState<AuthTokens | null>(initialTokens);
-  const [loading, setLoading] = useState<boolean>(true);
-
+  
   const [user, setUser] = useState<string | null>(() =>
     storedToken
       ? jwtDecode<DecodedToken>(JSON.parse(storedToken).access).username

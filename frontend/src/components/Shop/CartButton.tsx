@@ -3,11 +3,7 @@ import { notifyActions } from '../../store/uiSlice';
 import type { AppDispatch, RootState } from '../../store';
 import cart_icon from '../../assets/cart-icon.svg';
 
-interface CartButtonProps {
-  // if you expect any props, define them here
-}
-
-const CartButton = (props:CartButtonProps) => {
+const CartButton = () => {
 
   const dispatch = useDispatch<AppDispatch>();
   const cartItemsCount = useSelector((state:RootState)=>state.StoredCart.totalItems);

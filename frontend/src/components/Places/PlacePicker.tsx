@@ -3,7 +3,7 @@ import Error from "./Error";
 import DeleteConfirmation from "./DeleteConfirmation";
 import Places from "./Places";
 import AvailablePlaces from "./AvailablePlaces";
-import { useRef, useState, useCallback, useEffect } from 'react';
+import { useRef, useState, useCallback } from 'react';
 import { add_UserPlace, delete_UserPlaces, retrieve_UserPlaces } from '../../utils/http_methods';
 import { useFetch } from '../../hooks/useFetch';
 import logoImg from '../../assets/logo.png';
@@ -17,12 +17,7 @@ type PlaceType = {
     lon:number;
   }
   
-type retrievePlaceType = {
-  place:PlaceType[],
-  id:number,
-  user:number,
-  created_at:string
-}
+
   type Error = {
     message:string;
   }

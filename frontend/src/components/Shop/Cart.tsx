@@ -7,9 +7,7 @@ import { useDispatch } from "react-redux";
 import type { AppDispatch } from "../../store";
 import { notifyActions } from "../../store/uiSlice";
 
-interface CartProps {}
-
-const Cart = (props: CartProps) => {
+const Cart = () => {
   var totalPrice = 0;
 
   const dispatch = useDispatch<AppDispatch>();

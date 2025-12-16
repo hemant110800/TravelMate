@@ -2,11 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { notifyActions } from '../../store/uiSlice';
 import type { AppDispatch, RootState } from '../../store';
 import chat_icon from '../../assets/chat-icon.png';
-interface ChatButtonProps {
-  // if you expect any props, define them here
-}
 
-const ChatButton = (props:ChatButtonProps) => {
+const ChatButton = () => {
 
   const dispatch = useDispatch<AppDispatch>();
   // const cartItemsCount = useSelector((state:RootState)=>state.StoredCart.totalItems);

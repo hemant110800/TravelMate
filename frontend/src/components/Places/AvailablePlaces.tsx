@@ -37,7 +37,7 @@ async function fetchSortedPlaces(): Promise<PlaceType[]> {
      will set loading flag as false so that after sucessfully recieving user pos will updated loading state
   */
      
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     navigator.geolocation.getCurrentPosition((position) => {
       console.log(position);
       const sortedPlaces = sortPlacesByDistance(places, position.coords.latitude, position.coords.longitude);
@@ -50,8 +50,9 @@ async function fetchSortedPlaces(): Promise<PlaceType[]> {
 
 const AvailablePlaces = ({ onSelectPlace }:AvailablePlacesProps) => {
 
-  const { userPlaces: avalPlaces, isFetching: isDataLoad, error, setUserPlaces } = useFetch<PlaceType[]>(fetchSortedPlaces, []);
+  const { userPlaces: avalPlaces, isFetching: isDataLoad, error } = useFetch<PlaceType[]>(fetchSortedPlaces, []);
 
+  // console.log(setUserPlaces);
   if (error) {
     console.log(error);
     return <Error title="An error occurred!" message={error?.message || "Unknown error ocured!"} />;

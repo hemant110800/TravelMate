@@ -7,10 +7,10 @@ import { Provider } from 'react-redux';
 import { storeItems } from './store/index.ts';
 
 createRoot(document.getElementById('root')!).render(
-  // <StrictMode>
+  <StrictMode>
   
   <Provider store={storeItems}>
     <App />
     </Provider>
-  // </StrictMode>,
+  </StrictMode>,
 )
