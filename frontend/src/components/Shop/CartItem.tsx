@@ -35,7 +35,7 @@ const CartItem = (props: CartItemProps) => {
         <img
           className="cart_pr_image"
           // src={`http://127.0.0.1:8000/prod_images/${image_src}`}
-          src={`/public/shop/${image_src}`}
+          src={`/shop/${image_src}`}
           alt={image_alt}
         />
         <div className="d-flex flex-column gap-2 justify-content-start align-items-start">

@@ -33,7 +33,7 @@ export default function Places({ title, places,dataLoaded,loadingText,fallbackTe
           {places.map((place) => (
             <li key={place.id} className="place-item">
               <button onClick={() => onSelectPlace(place)}>
-                <img src={`/public/places/${place.image_src}`} alt={place.image_alt} />
+                <img src={`/places/${place.image_src}`} alt={place.image_alt} />
                 {/* <img src={`http://127.0.0.1:8000/images/${place.image_src}`} alt={place.image_alt} /> */}
                 <h3>{place.title}</h3>
               </button>
