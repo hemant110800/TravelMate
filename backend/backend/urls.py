@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf.urls.static import static
+# from django.conf.urls.static import static
 from django.conf import settings
 from rest_framework_simplejwt.views import TokenRefreshView
 from backend.views import MyTokenObtainPairView, RegistrationView, GeminiChatView
@@ -37,7 +37,8 @@ urlpatterns = [
 
 ]
 
-
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-urlpatterns += static(settings.PR_MEDIA_URL, document_root=settings.PR_MEDIA_ROOT)
-# urlpatterns += [re_path(r'^.*$', not_found_view)]
+# development purpose only (django.conf.urls.static.static() is for development only) 
+ #now we shifted the images to frontend for future will go with cloud(cloudinary/s3)
+ 
+   #  urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+   # urlpatterns += static(settings.PR_MEDIA_URL, document_root=settings.PR_MEDIA_ROOT)

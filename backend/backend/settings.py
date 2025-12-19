@@ -163,11 +163,15 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# For serving media or custom public folder (like images)
-MEDIA_URL = '/images/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'places/images')
-PR_MEDIA_URL = '/prod_images/'
-PR_MEDIA_ROOT = os.path.join(BASE_DIR, 'shop/images')
+# For serving media or custom public folder (like images)v(for development purpose this way is fine but for production 
+# environment currently we shifed images to frontend, else if upladed images we can shift to cloud(Cloudinary/s3))
+
+  # MEDIA_URL = '/images/'
+  # MEDIA_ROOT = os.path.join(BASE_DIR, 'places/images')
+  # PR_MEDIA_URL = '/prod_images/'
+  # PR_MEDIA_ROOT = os.path.join(BASE_DIR, 'shop/images')
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
