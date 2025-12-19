@@ -1,6 +1,13 @@
 # TravelMate (Travel and Shopping App)
 TravelMate is a full-stack web application that combines travel planning, shopping, secure payments, and AI assistance into a single platform.
 
+<img width="1348" height="529" alt="image" src="https://github.com/user-attachments/assets/74b5b8c5-1f01-4d30-9e6e-4a89de23d3d5" />
+<img width="1366" height="643" alt="image" src="https://github.com/user-attachments/assets/d63dbcc0-4a49-4565-ba2a-65395c5f3abe" />
+<img width="1366" height="682" alt="image" src="https://github.com/user-attachments/assets/719c9eaf-de79-4ffa-bf1c-44350b87039e" />
+
+# Live Web App Link
+https://hemant110800travelmate.netlify.app
+
 # Key Features
 
   **1) User Authentication** 
