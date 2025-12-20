@@ -14,13 +14,11 @@ https://hemant110800travelmate.netlify.app
   - Secure user registration and login using JWT
 
 ### Travel Module
-  - Browse and select travel destinations
-    
+  - Browse and select travel destinations      
   - Manage user-specific selected places
 
 ### Shopping Module
-  - Browse products and manage cart
-    
+  - Browse products and manage cart      
   - Buy Now and cart-based order placement
 
 ### Payment Integration
@@ -53,6 +51,6 @@ This link can be referred for dbdocs commands: https://dbdocs.io/docs
     Razorpay Payment Gateway, Generative AI APIs, Docker (PostgreSQL), GitHub for version control
 
 ## Deployment Platforms
-**Frontend**: Netlify
+**Frontend**: Netlify  
 **Backend**: Render 
 **Database**: Render
