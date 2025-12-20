@@ -23,7 +23,7 @@
 ## 5. AI Assistant Scope
 **Decision:** Read-only, general-purpose Generative AI assistant  
 **Reason:** Ensures user safety and prevents unauthorized access or actions within the application.  
-**Trade-off:** The AI assistant cannot access application data, user accounts, orders, or trigger any in-app operations.
+**Trade-off:** The AI assistant cannot access application data, user accounts, or trigger any in-app operations.
 
 ## 6. Image Management
 **Decision:** Static public images for places and products  
