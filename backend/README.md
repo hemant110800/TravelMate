@@ -17,15 +17,15 @@ Make sure you have the following installed: Python 3.10+, Docker, pip / virtuale
 **1. Clone the Repository**
 
 git clone <your-repo-url>
+
 cd travelmate-backend
 
 **2. Create a PostgreSQL Database (Using Docker)**
-Run PostgreSQL container:
 
+**Run PostgreSQL container:**
 docker run --rm -d --name travelMate-postgres -e POSTGRES_USER=travelmate_user -e POSTGRES_PASSWORD=travelmate_password -p 5432:5432 postgres
 
-Create a sample database:
-
+**Create a sample database:**
 docker exec -it travelmate-postgres psql -U travelmate_user -c "CREATE DATABASE travelmate_db;"
 
 **3. Create a .env file with required values**
