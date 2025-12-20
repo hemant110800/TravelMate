@@ -32,11 +32,9 @@ e) “Buy Now” option for instant purchases
 f) Place orders directly from the cart  
 
 ### 4) Payment Integration
-a) Secure payment processing using Razorpay  
-b) Supports:  
-     i) Cart-based checkout   
-     ii) Buy Now flow  
-c) Ensures safe and reliable transaction handling  
+a) Secure payment flow implemented using Razorpay  
+b) Supports checkout from cart and Buy Now flow  
+c) Integrated using Razorpay Test Mode for demo purposes  
 
 ### 5) AI Chat Assistant
 a) Integrated Generative AI–based chat assistant  
@@ -69,7 +67,7 @@ c) Secure endpoints for user-specific data
 
 ### Data Management  
 a) PostgreSQL Database  
-b) Relational schema for users, places, products, carts, orders, and payments  
+b) Relational schema for users, places, products, carts
 c) Migration-based schema evolution  
 
 ### Validation & Error Handling
