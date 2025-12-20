@@ -1,3 +1,14 @@
+# TravelMate Backend – Local Development Setup
+This document explains how to set up and run the TravelMate backend server locally for development and testing.
+
+# Tech Stack
+
+**Backend:** Django / Django REST Framework
+**Database:** PostgreSQL
+**Containerization:** Docker (for DB)
+**Auth:** JWT
+**Deployment (Prod):** Render
+
 # Steps to setup the Server in Local
 
 1. Create a Sample Postgres DB
