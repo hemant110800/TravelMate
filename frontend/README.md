@@ -4,37 +4,38 @@ TravelMate is a travel-focused web application that allows users to explore plac
 
 This project is built using React, TypeScript, and Vite and is deployed on Netlify.
 
-# Tech Stack
+## Tech Stack
 
-**Framework:** React
+#### Framework: 
+React
+#### Build Tool: 
+Vite
+#### Language: 
+TypeScript
+#### Styling:
+SCSS
+#### State Management:
+React Context API, REDUX
+#### API Communication:
+REST (Django backend)
+#### Deployment:
+Netlify
 
-**Build Tool:** Vite
-
-**Language:** TypeScript
-
-**Styling:** SCSS
-
-**State Management:** React Context API, REDUX
-
-**API Communication:** REST (Django backend)
-
-**Deployment:** Netlify
-
-# Prerequisites
+## Prerequisites
 Make sure you have the following installed:
 
 Node.js (v18+ recommended), npm (or yarn), Git
 
-# Local Setup Instructions
+## Local Setup Instructions
 
-# 1. Clone the Repository
+### 1. Clone the Repository
 git clone your-frontend-repo-url
 cd travelmate-frontend
 
-# 2. Install Dependencies
+### 2. Install Dependencies
 npm install
 
-# 3. Environment Variables
+### 3. Environment Variables
 
 Create a .env file in the project root:
 
@@ -45,7 +46,7 @@ VITE_BACKEND_URL = http://127.0.0.1:8000
    
 2. VITE_BACKEND_URL should point to your running backend server
 
-# 4.Static Images Setup
+### 4.Static Images Setup
 
 Currently, the application uses static images served directly from the frontend.
 
@@ -63,13 +64,13 @@ public/products/shoes.jpg
   
 3. Images are served by Netlify CDN in production
 
-# 5. Run the Development Server
+### 5. Run the Development Server
 
 **npm run dev**
 The application will be available at:
 http://localhost:5173
 
-# Authentication Flow
+## Authentication Flow
 
 1. User authenticates via backend APIs
 
