@@ -48,7 +48,9 @@ VITE_BACKEND_URL = http://127.0.0.1:8000
 # 4.Static Images Setup
 
 Currently, the application uses static images served directly from the frontend.
+
 📁 **Folder structure:**
+
 public/
  ├── places/
  │   ├── taj-mahal.jpg
@@ -57,12 +59,11 @@ public/
      ├── bag.jpg
      └── shoes.jpg
 
-**Usage in code:**
-<img src="/places/taj-mahal.jpg" alt="Taj Mahal" />
-
-Notes:
+**Notes:**
 1. Do not include /public in URLs
+   
 2. File names are case-sensitive
+  
 3. Images are served by Netlify CDN in production
 
 # 5. Run the Development Server
