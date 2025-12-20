@@ -51,7 +51,7 @@ This project demonstrates real-world full-stack development concepts including f
 
 ### Technology
 
-- React (Vit-  
+- React (Vite)
 - TypeScript  
 - SCSS for styling  
 - Axios for API communication  
@@ -127,7 +127,7 @@ PostgreSQL (Dockerize-
 - Cloud-based image uploads (Cloudinary / S3)  
 - Booking and itinerary management  
 - Advanced AI-powered travel recommendations  
-- Improved order tracking and history  
+- Add order tracking and history  
 
 ## Evaluation Focus
 
