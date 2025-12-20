@@ -92,6 +92,18 @@ c) Cloud-based storage will be introduced for admin-uploaded images in future
 d) JWT tokens are stored client-side for authentication  
 e) Payment processing relies on Razorpay’s hosted checkout flow  
 
+a) The application is developed primarily for **learning, demonstration, and evaluation purposes**.  
+b) **Payment integration is implemented using Razorpay in Test Mode only**. No real monetary transactions are processed.  
+c) All payment success and failure scenarios are based on Razorpay’s test environment responses.  
+d) Static images for travel places and shop products are currently served as public assets; admin-based image uploads may be added in future enhancements.    
+e) User authentication is implemented using JWT tokens without advanced features such as refresh token rotation or multi-factor authentication.  
+f) The **AI Chat Assistant is a general-purpose, Generative AI–based assistant** intended only for answering generic travel or usage-related queries.  
+g) The AI assistant **does not have access to application data, user accounts,  payments, or system controls**, and cannot perform or trigger any in-app actions.  
+h) AI-generated responses depend on third-party APIs and may not always be accurate or context-aware.  
+i) The system assumes a stable internet connection for API communication and third-party integrations.  
+- The application is optimized for modern web browsers; legacy browser support is not guaranteed.  
+
+
 All assumptions are documented to ensure transparency during evaluation.
 
 ## Project Setup
