@@ -52,5 +52,5 @@ This link can be referred for dbdocs commands: https://dbdocs.io/docs
 
 ## Deployment Platforms
 **Frontend**: Netlify  
-**Backend**: Render 
+**Backend**: Render  
 **Database**: Render
