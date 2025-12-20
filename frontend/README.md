@@ -1,69 +1,78 @@
-# React + TypeScript + Vite
+# TravelMate Frontend - React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TravelMate is a travel-focused web application that allows users to explore places, browse products, and interact with travel features through a modern React-based frontend.
 
-Currently, two official plugins are available:
+This project is built using React, TypeScript, and Vite and is deployed on Netlify.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Tech Stack
 
-## Expanding the ESLint configuration
+**Framework:** React
+**Build Tool:** Vite
+**Language:** TypeScript
+**Styling:** SCSS
+**State Management:** React Context API, REDUX
+**API Communication:** REST (Django backend)
+**Deployment:** Netlify
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Prerequisites
+Make sure you have the following installed:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Node.js (v18+ recommended), npm (or yarn), Git
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+# Local Setup Instructions
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# 1. Clone the Repository
+git clone your-frontend-repo-url
+cd travelmate-frontend
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# 2. Install Dependencies
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 3. Environment Variables
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Create a .env file in the project root:
+
+VITE_BACKEND_URL = http://127.0.0.1:8000
+
+**Important Notes**
+1. All Vite environment variables must start with VITE_
+   
+2. VITE_BACKEND_URL should point to your running backend server
+
+# 4.Static Images Setup
+
+Currently, the application uses static images served directly from the frontend.
+📁 **Folder structure:**
+public/
+ ├── places/
+ │   ├── taj-mahal.jpg
+ │   └── goa.jpg
+ └── products/
+     ├── bag.jpg
+     └── shoes.jpg
+
+**Usage in code:**
+<img src="/places/taj-mahal.jpg" alt="Taj Mahal" />
+
+Notes:
+1. Do not include /public in URLs
+2. File names are case-sensitive
+3. Images are served by Netlify CDN in production
+
+# 5. Run the Development Server
+
+**npm run dev**
+The application will be available at:
+http://localhost:5173
+
+# Authentication Flow
+
+1. User authenticates via backend APIs
+
+2. Backend returns a JWT access token
+
+3. Token is stored on the client (context / localStorage)
+
+4. Token is attached to protected requests
+
 ```
