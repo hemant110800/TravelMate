@@ -33,14 +33,14 @@ backend API development, authentication, and deployment.
    - Navigation and protected routes
 
 2. **User Experience**
-   - Responsive layout for desktop and mobile
+   - Responsive layout for dekstop
    - Client-side form validation
    - Smooth navigation and feedback
 
 3. **Technology**
    - React + TypeScript
    - Vite for bundling
-   - Context API for state management
+   - Context API, Redux for state management
 
 ---
 
