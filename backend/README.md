@@ -3,11 +3,11 @@ This document explains how to set up and run the TravelMate backend server local
 
 ## Tech Stack
 
-**Backend:** Django / Django REST Framework
-**Database:** PostgreSQL
-**Containerization:** Docker (for DB)
-**Auth:** JWT
-**Deployment (Prod):** Render
+**Backend:** Django / Django REST Framework  
+**Database:** PostgreSQL  
+**Containerization:** Docker (for DB)  
+**Auth:** JWT  
+**Deployment (Prod):** Render  
 
 ## Prerequisites
 Make sure you have the following installed: Python 3.10+, Docker, pip / virtualenv, Git
@@ -16,8 +16,7 @@ Make sure you have the following installed: Python 3.10+, Docker, pip / virtuale
 
 ### 1. Clone the Repository
 
-git clone your-repo-url
-
+git clone your-repo-url  
 cd travelmate-backend
 
 ### 2. Create a PostgreSQL Database (Using Docker)
@@ -33,36 +32,24 @@ docker exec -it travelmate-postgres psql -U travelmate_user -c "CREATE DATABASE 
 ### 3. Create a .env file with required values
 Create a .env file in the project root.
 
-OPENAI_API_KEY = ""
-
-GOOGLE_API_KEY = "your-google-api-key-here"
-
-RAZORPAY_KEY_ID = "your-rzp-key-id"
-
-RAZORPAY_KEY_SECRET = "your-rzp-secret"
-
-DB_NAME = "dbname"
-
-DB_USER = "dbuser"
-
-DB_PASSWORD = "dbpassword"
-
-DB_HOST = "dbhost"
-
-DB_PORT = "dbport"
-
-PG_ADMIN_EMAIL = "pgadminemail"
-
-PG_ADMIN_PASSWORD = "password"
-
-DJ_SECURE_KEY = "django secret key"
-
-DJANGO_DEBUG_FLAG = "False"
-
-ALLOWED_HOSTS="allowed hosts"
+OPENAI_API_KEY = ""  
+GOOGLE_API_KEY = "your-google-api-key-here"  
+RAZORPAY_KEY_ID = "your-rzp-key-id"  
+RAZORPAY_KEY_SECRET = "your-rzp-secret"  
+DB_NAME = "dbname"  
+DB_USER = "dbuser"  
+DB_PASSWORD = "dbpassword"  
+DB_HOST = "dbhost"  
+DB_PORT = "dbport"  
+PG_ADMIN_EMAIL = "pgadminemail"  
+PG_ADMIN_PASSWORD = "password"  
+DJ_SECURE_KEY = "django secret key"  
+DJANGO_DEBUG_FLAG = "False"  
+ALLOWED_HOSTS="allowed hosts"  
 
 ### 4. Create & Activate Virtual Environment
-**Create :-** python -m venv venv
+
+**Create :-** python -m venv venv  
 **Activate :-** venv\Scripts\activate
 
 ### 5. Install Dependencies
@@ -70,9 +57,8 @@ pip install -r requirements.txt
 
 ### 6. Apply Database Migrations
 
-python manage.py makemigrations
-
-python manage.py migrate
+python manage.py makemigrations  
+python manage.py migrate   
 
 **(Optional) Create superuser:**
 
