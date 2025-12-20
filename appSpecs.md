@@ -17,117 +17,124 @@ b) JWT token–based authentication
 c) Personalized user experience after login  
 
 ### 2) Travel Module (Places)
-a) View a list of available travel destinations
-b) Select preferred travel places
-c) Track user-specific selected places
-d) Remove selected places at any time
-e) Persistent storage of user preferences
+a) View a list of available travel destinations  
+b) Select preferred travel places  
+c) Track user-specific selected places  
+d) Remove selected places at any time  
+e) Persistent storage of user preferences  
 
 ### 3) Shopping Module
-a) Browse a catalog of travel-related products
-b) View product prices and details
-c) Add products to cart
-d) Update or remove cart items
-e) “Buy Now” option for instant purchases
-f) Place orders directly from the cart
+a) Browse a catalog of travel-related products  
+b) View product prices and details  
+c) Add products to cart  
+d) Update or remove cart items  
+e) “Buy Now” option for instant purchases  
+f) Place orders directly from the cart  
 
 ### 4) Payment Integration
-a) Secure payment processing using Razorpay
-b) Supports:
-     i) Cart-based checkout 
-     ii) Buy Now flow
-c) Ensures safe and reliable transaction handling
+a) Secure payment processing using Razorpay  
+b) Supports:  
+     i) Cart-based checkout   
+     ii) Buy Now flow  
+c) Ensures safe and reliable transaction handling  
 
 ### 5) AI Chat Assistant
-a) Integrated Generative AI–based chat assistant
-b) Helps users with:
-    i) Travel-related queries
-    ii) General guidance within the application
-c) Enhances overall user engagement and experience
-    
-   
-
-## Scope of Application
-
-### Current Features
-- Browse travel destinations (places)
-- View travel-related products
-- User authentication using JWT
-- Responsive frontend UI
-- RESTful backend APIs
-- Static image serving via frontend CDN
-
----
+a) Integrated Generative AI–based chat assistant  
+b) Helps users with:  
+    i) Travel-related queries  
+    ii) General guidance within the application  
+c) Enhances overall user engagement and experience  
 
 ## Frontend Requirements
 
-1. **User Interface**
-   - Display a list of travel destinations
-   - Display travel products with images and details
-   - Login and registration screens
-   - Navigation and protected routes
+### User Interface
+a) Responsive and user-friendly UI  
+b) Clear navigation between modules  
+c) Protected routes for authenticated users  
+d) Real-time feedback on user actions  
 
-2. **User Experience**
-   - Responsive layout for dekstop
-   - Client-side form validation
-   - Smooth navigation and feedback
+### Technology
 
-3. **Technology**
-   - React + TypeScript
-   - Vite for bundling
-   - Context API, Redux for state management
-
----
+React (Vite)  
+TypeScript  
+SCSS for styling  
+Axios for API communication  
 
 ## Backend Requirements
 
-1. **API Development**
-   - REST APIs for places, products, and users
-   - JWT-based authentication
-   - Role-based access (future scope)
+### API Development
+a) RESTful APIs using Django REST Framework  
+b) JWT-based authentication and authorization  
+c) Secure endpoints for user-specific data  
 
-2. **Data Storage**
-   - PostgreSQL database
-   - Django ORM models
-   - Migration-based schema management
+### Data Management  
+a) PostgreSQL Database  
+b) Relational schema for users, places, products, carts, orders, and payments  
+c) Migration-based schema evolution  
 
-3. **Validation & Error Handling**
-   - Server-side validation for inputs
-   - Proper HTTP status codes and error messages
+### Validation & Error Handling
+a) Server-side input validation  
+b) Proper HTTP status codes  
+c) Meaningful error messages  
 
----
+## Database Design
+The database schema and relationships are documented using DbDocs.
 
 ## Non-Functional Requirements
-
-- Secure handling of credentials
-- Scalable deployment setup
-- Clean and maintainable codebase
-
----
+a) Secure handling of sensitive data  
+b) Scalable backend architecture  
+c) Clean, maintainable, and modular codebase  
+d) Separation of concerns between frontend and backend  
+e) Production-ready deployment strategy  
 
 ## Assumptions & Design Decisions
+a) Static images (places and products) are currently served from the frontend using Netlify CDN  
+b) Backend does not store media files in production  
+c) Cloud-based storage will be introduced for admin-uploaded images in future  
+d) JWT tokens are stored client-side for authentication  
+e) Payment processing relies on Razorpay’s hosted checkout flow  
 
-- Images are currently served statically from frontend
-- Backend does not store media files in production
-- Cloud storage will be used for admin uploads in future
-- Authentication tokens are stored client-side
+All assumptions are documented to ensure transparency during evaluation.
 
----
+## Project Setup
+a) Frontend and backend are maintained in separate directories  
+b) Each directory contains its own README.md with detailed local setup instructions  
+c) PostgreSQL database is dockerized for local development
+
+## Tech Stack Summary
+
+#### Frontend 
+React (Vite), TypeScript, SCSS, Axios
+
+#### Backend
+Django, Django REST Framework, JWT Authentication
+
+#### Database
+PostgreSQL (Dockerized)
+
+## Integrations & Tools
+
+a) Razorpay Payment Gateway  
+b) Generative AI APIs  
+c) Docker (PostgreSQL)  
+d) DbDocs (Schema documentation)  
+e) GitHub (Version Control)  
 
 ## Future Enhancements
 
-- Admin dashboard
-- Cloud-based image uploads
-- Booking and itinerary management
-- Payment integration
+a) Admin dashboard for managing places and products  
+b) Cloud-based image uploads (Cloudinary / S3)  
+c) Booking and itinerary management  
+d) Advanced AI-powered travel recommendations  
+e) Improved order tracking and history  
 
----
+## Evaluation Focus
 
-## Evaluation Criteria
+This project is intended to demonstrate:  
+a) Full-stack application design  
+b) Frontend–backend integration  
+c) Secure authentication and payments  
+d) Real-world deployment practices  
+e) Scalable and maintainable architecture  
 
-This project demonstrates:
-- Full-stack architecture understanding
-- Clean API design
-- Frontend–backend integration
-- Production deployment practices
-
+Any additional assumptions or implementation trade-offs are documented in the respective README.md files.
