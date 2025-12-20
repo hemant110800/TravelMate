@@ -14,21 +14,23 @@ Make sure you have the following installed: Python 3.10+, Docker, pip / virtuale
 
 # Steps to setup Server Locally
 
-**1. Clone the Repository**
+# 1. Clone the Repository
 
 git clone <your-repo-url>
 
 cd travelmate-backend
 
-**2. Create a PostgreSQL Database (Using Docker)**
+# 2. Create a PostgreSQL Database (Using Docker)
 
 **Run PostgreSQL container:**
+
 docker run --rm -d --name travelMate-postgres -e POSTGRES_USER=travelmate_user -e POSTGRES_PASSWORD=travelmate_password -p 5432:5432 postgres
 
 **Create a sample database:**
+
 docker exec -it travelmate-postgres psql -U travelmate_user -c "CREATE DATABASE travelmate_db;"
 
-**3. Create a .env file with required values**
+# 3. Create a .env file with required values
 Create a .env file in the project root.
 
 OPENAI_API_KEY = ""
@@ -46,22 +48,23 @@ DJ_SECURE_KEY = "django secret key"
 DJANGO_DEBUG_FLAG = "False"
 ALLOWED_HOSTS="allowed hosts"
 
-**4. Create & Activate Virtual Environment**
-Create :- python -m venv venv
-Activate :- venv\Scripts\activate
+# 4. Create & Activate Virtual Environment
+**Create :-** python -m venv venv
+**Activate :-** venv\Scripts\activate
 
-**5. Install Dependencies**
+# 5. Install Dependencies
 pip install -r requirements.txt
 
-**6. Apply Database Migrations**
+# 6. Apply Database Migrations
 
 python manage.py makemigrations
 python manage.py migrate
 
 **(Optional) Create superuser:**
+
 python manage.py createsuperuser
 
-**7. Run the Development Server**
+# 7. Run the Development Server
 python manage.py runserver
 
 Backend will be available at:
