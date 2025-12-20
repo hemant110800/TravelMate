@@ -9,92 +9,60 @@ This document explains how to set up and run the TravelMate backend server local
 **Auth:** JWT
 **Deployment (Prod):** Render
 
-# Steps to setup the Server in Local
+# Prerequisites
+Make sure you have the following installed: Python 3.10+, Docker, pip / virtualenv, Git
 
-1. Create a Sample Postgres DB
-2. Create a .env file with required values
-3. Install all required packages using poetry
-4. Create necessary tables using alembic migrations
-5. Run the app using given command in next section
+# Steps to setup Server Locally
 
-# Development Commands
+**1. Clone the Repository**
 
-To setup a DB instance, run:
+git clone <your-repo-url>
+cd travelmate-backend
 
-docker run --rm -d --name postgres -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -p 5432:5432 postgres
+**2. Create a PostgreSQL Database (Using Docker)**
+Run PostgreSQL container:
 
-Steps to setup the Server in Local
-Create a Sample Postgres DB
-Create a .env file with required values
-Install all required packages using poetry
-Create necessary tables using alembic migrations
-Run the app using given command in next section
-Development Commands
-To setup a DB instance, run:
+docker run --rm -d --name travelMate-postgres -e POSTGRES_USER=travelmate_user -e POSTGRES_PASSWORD=travelmate_password -p 5432:5432 postgres
 
-docker run --rm -d --name postgres -e POSTGRES_USER=myuser -e POSTGRES_PASSWORD=mypassword -p 5432:5432 postgres
-Create a sample DB:
+Create a sample database:
 
-docker exec -it postgres psql -U myuser -c 'CREATE DATABASE mydb;'
-Generate secret key value using this command:
+docker exec -it travelmate-postgres psql -U travelmate_user -c "CREATE DATABASE travelmate_db;"
 
-openssl rand -hex 32
-Setup this variables in a .env file
+**3. Create a .env file with required values**
+Create a .env file in the project root.
 
-SQL_DB_URI=postgresql+psycopg://myuser:mypassword@0.0.0.0:5432/mydb
-ALLOWED_ORIGINS={allowed_origin_urls}
-APP_NAME=SAMPLE_APP
-SECRET_KEY={secret_key_value}
-JWT_HASHING_ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRING_MINUTES=3600
-PASSWORD_HASHING_SCHEME=bcrypt
-To install dependencies, use:
+OPENAI_API_KEY = ""
+GOOGLE_API_KEY = "your-google-api-key-here"
+RAZORPAY_KEY_ID = "your-rzp-key-id"
+RAZORPAY_KEY_SECRET = "your-rzp-secret"
+DB_NAME = "dbname"
+DB_USER = "dbuser"
+DB_PASSWORD = "dbpassword"
+DB_HOST = "dbhost"
+DB_PORT = "dbport"
+PG_ADMIN_EMAIL = "pgadminemail"
+PG_ADMIN_PASSWORD = "password"
+DJ_SECURE_KEY = "django secret key"
+DJANGO_DEBUG_FLAG = "False"
+ALLOWED_HOSTS="allowed hosts"
 
-poetry install
-To activate poetry virtual environment, use:
+**4. Create & Activate Virtual Environment**
+Create :- python -m venv venv
+Activate :- venv\Scripts\activate
 
-poetry shell
-Creating migration:
+**5. Install Dependencies**
+pip install -r requirements.txt
 
-alembic revision --autogenerate -m "Migration Context Message"
-Applying all migrations:
+**6. Apply Database Migrations**
 
-alembic upgrade head
-Viewing migration history:
+python manage.py makemigrations
+python manage.py migrate
 
-alembic history --verbose
-To run the app locally, use:
+**(Optional) Create superuser:**
+python manage.py createsuperuser
 
-poetry run uvicorn main:app --reloadCreate a sample DB:
+**7. Run the Development Server**
+python manage.py runserver
 
-docker exec -it postgres psql -U myuser -c 'CREATE DATABASE mydb;'
-Generate secret key value using this command:
-
-openssl rand -hex 32
-Setup this variables in a .env file
-
-SQL_DB_URI=postgresql+psycopg://myuser:mypassword@0.0.0.0:5432/mydb
-ALLOWED_ORIGINS={allowed_origin_urls}
-APP_NAME=SAMPLE_APP
-SECRET_KEY={secret_key_value}
-JWT_HASHING_ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRING_MINUTES=3600
-PASSWORD_HASHING_SCHEME=bcrypt
-To install dependencies, use:
-
-poetry install
-To activate poetry virtual environment, use:
-
-poetry shell
-Creating migration:
-
-alembic revision --autogenerate -m "Migration Context Message"
-Applying all migrations:
-
-alembic upgrade head
-Viewing migration history:
-
-alembic history --verbose
-To run the app locally, use:
-
-poetry run uvicorn main:app --reload
+Backend will be available at:
+http://127.0.0.1:8000/
