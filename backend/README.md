@@ -1,7 +1,7 @@
 # TravelMate Backend – Local Development Setup
 This document explains how to set up and run the TravelMate backend server locally for development and testing.
 
-# Tech Stack
+## Tech Stack
 
 **Backend:** Django / Django REST Framework
 **Database:** PostgreSQL
@@ -9,18 +9,18 @@ This document explains how to set up and run the TravelMate backend server local
 **Auth:** JWT
 **Deployment (Prod):** Render
 
-# Prerequisites
+## Prerequisites
 Make sure you have the following installed: Python 3.10+, Docker, pip / virtualenv, Git
 
-# Steps to setup Server Locally
+## Steps to setup Server Locally
 
-# 1. Clone the Repository
+### 1. Clone the Repository
 
 git clone your-repo-url
 
 cd travelmate-backend
 
-# 2. Create a PostgreSQL Database (Using Docker)
+### 2. Create a PostgreSQL Database (Using Docker)
 
 **Run PostgreSQL container:**
 
@@ -30,7 +30,7 @@ docker run --rm -d --name travelMate-postgres -e POSTGRES_USER=travelmate_user -
 
 docker exec -it travelmate-postgres psql -U travelmate_user -c "CREATE DATABASE travelmate_db;"
 
-# 3. Create a .env file with required values
+### 3. Create a .env file with required values
 Create a .env file in the project root.
 
 OPENAI_API_KEY = ""
@@ -61,14 +61,14 @@ DJANGO_DEBUG_FLAG = "False"
 
 ALLOWED_HOSTS="allowed hosts"
 
-# 4. Create & Activate Virtual Environment
+### 4. Create & Activate Virtual Environment
 **Create :-** python -m venv venv
 **Activate :-** venv\Scripts\activate
 
-# 5. Install Dependencies
+### 5. Install Dependencies
 pip install -r requirements.txt
 
-# 6. Apply Database Migrations
+### 6. Apply Database Migrations
 
 python manage.py makemigrations
 
@@ -78,7 +78,7 @@ python manage.py migrate
 
 python manage.py createsuperuser
 
-# 7. Run the Development Server
+### 7. Run the Development Server
 python manage.py runserver
 
 Backend will be available at:
