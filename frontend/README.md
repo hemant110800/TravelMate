@@ -51,13 +51,10 @@ Currently, the application uses static images served directly from the frontend.
 
 📁 **Folder structure:**
 
-public/
- ├── places/
- │   ├── taj-mahal.jpg
- │   └── goa.jpg
- └── products/
-     ├── bag.jpg
-     └── shoes.jpg
+public/places/taj-mahal.jpg,
+public/places/goa.jpg,
+public/products/bag.jpg,
+public/products/shoes.jpg
 
 **Notes:**
 1. Do not include /public in URLs
