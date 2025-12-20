@@ -12,9 +12,9 @@ This project demonstrates real-world full-stack development concepts including f
 ## Core Features
 
 ### 1) User Authentication
-a) User registration and login functionality
-b) JWT token–based authentication
-c) Personalized user experience after login
+a) User registration and login functionality  
+b) JWT token–based authentication  
+c) Personalized user experience after login  
 
 ### 2) Travel Module (Places)
 a) View a list of available travel destinations
