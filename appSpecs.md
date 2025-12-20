@@ -1,16 +1,51 @@
 # Application Specification – TravelMate
 
 ## Project Title
-TravelMate – Smart Travel Companion
+TravelMate – Travel and Shopping Platform
 
 ## Introduction
-TravelMate is a full-stack web application designed to help users explore travel destinations,
-browse travel-related products, and manage interactions related to travel planning.
+TravelMate is a full-stack web application that combines travel planning, shopping, secure payments, and AI-powered assistance into a single platform.
+The application is designed to provide users with a seamless experience for discovering travel destinations, purchasing travel-related products, and receiving intelligent guidance through an AI chat assistant.
 
-The application is built to demonstrate full-stack development skills, including frontend UI design,
-backend API development, authentication, and deployment.
+This project demonstrates real-world full-stack development concepts including frontend UI development, backend API design, authentication, payment integration, and cloud deployment.
 
----
+## Core Features
+
+### 1) User Authentication
+a) User registration and login functionality
+b) JWT token–based authentication
+c) Personalized user experience after login
+
+### 2) Travel Module (Places)
+a) View a list of available travel destinations
+b) Select preferred travel places
+c) Track user-specific selected places
+d) Remove selected places at any time
+e) Persistent storage of user preferences
+
+### 3) Shopping Module
+a) Browse a catalog of travel-related products
+b) View product prices and details
+c) Add products to cart
+d) Update or remove cart items
+e) “Buy Now” option for instant purchases
+f) Place orders directly from the cart
+
+### 4) Payment Integration
+a) Secure payment processing using Razorpay
+b) Supports:
+     i) Cart-based checkout 
+     ii) Buy Now flow
+c) Ensures safe and reliable transaction handling
+
+### 5) AI Chat Assistant
+a) Integrated Generative AI–based chat assistant
+b) Helps users with:
+    i) Travel-related queries
+    ii) General guidance within the application
+c) Enhances overall user engagement and experience
+    
+   
 
 ## Scope of Application
 
