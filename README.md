@@ -22,10 +22,10 @@ https://hemant110800travelmate.netlify.app
   - Buy Now and cart-based order placement
 
 ### Payment Integration
-  - Secure online payments via Razorpay
+  - Secure online payments via Razorpay(Test Mode)
 
 ### AI Chat Assistant
-  - Generative AI-powered assistant for user guidance
+  - AI-powered chat assistant for general user guidance
 
 ## Database Diagram
 You can view the database diagram for this web app here: https://dbdocs.io/hemantbhati1208/TravelMate
