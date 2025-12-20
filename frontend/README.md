@@ -6,20 +6,13 @@ This project is built using React, TypeScript, and Vite and is deployed on Netli
 
 ## Tech Stack
 
-#### Framework: 
-React
-#### Build Tool: 
-Vite
-#### Language: 
-TypeScript
-#### Styling:
-SCSS
-#### State Management:
-React Context API, REDUX
-#### API Communication:
-REST (Django backend)
-#### Deployment:
-Netlify
+**Framework:** React
+**Build Tool:** Vite
+**Language:** TypeScript
+**Styling:** SCSS
+**State Management:** React Context API, REDUX
+**API Communication:** REST (Django backend)
+**Deployment:** Netlify
 
 ## Prerequisites
 Make sure you have the following installed:
