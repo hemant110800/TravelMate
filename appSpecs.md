@@ -38,9 +38,7 @@ This project demonstrates real-world full-stack development concepts including f
 
 ### 5) AI Chat Assistant
 - Integrated Generative AI–based chat assistant  
-- Helps users with:  
-    a) Travel-related queries  
-    b) General guidance within the application  
+- Helps users general queries  
 - Enhances overall user engagement and experience  
 
 ## Frontend Requirements
