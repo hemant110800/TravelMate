@@ -16,13 +16,12 @@ from datetime import timedelta
 from dotenv import load_dotenv
 import dj_database_url
 
+if os.getenv("DJANGO_ENV", "development") != "production":
+    load_dotenv()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DJANGO_DEBUG_FLAG", "False") == "True"
 
-
-if DEBUG:
-    load_dotenv()
 
 # OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY",'')
